@@ -1,3 +1,40 @@
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+/* Colores */
+:root {
+    
+    /* Colores base */
+    --color-primario: #5D57F4;
+    --color-negro: #1A1A1A;
+    --color-banco: #FCFBFF;
+    --color-claro: #F7F6FE;
+    --color-lila-claro: #F0EEFF;
+
+
+    /* Variables funcionales que usan los colores base */
+    --borde-tarjeta: rgba(var(--color-primario), 0.1);
+    --fondo-tarjeta: var(--color-banco);
+    --fondo-bloque: var(var(--color-claro));
+    --fondo-tarjeta-lila: var(var(--color-lila-claro));
+    --texto-gris:rgba(var(--color-negro), 0.6);
+
+}
+/* Utilidades */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
 .poppins-regular {
     font-family: "Poppins", sans-serif;
 }
@@ -6,3 +43,23 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 }
+
+/* navegacion */
+nav {
+    background-color: var(--color-banco);
+    position: sticky;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
+
+/* navegacion */
