@@ -4,15 +4,16 @@
     padding: 0;
     box-sizing: border-box; 
 }
-/* Colores */
+
 :root {
     
     /* Colores base */
-    --color-primario: #5D57F4;
-    --color-negro: #1A1A1A;
-    --color-banco: #FCFBFF;
-    --color-claro: #F7F6FE;
-    --color-lila-claro: #F0EEFF;
+    --color-primario: rgb(93, 87, 244);       /* #5D57F4 */
+    --color-negro: rgb(26, 26, 26);           /* #1A1A1A */
+    --color-banco: rgb(252, 251, 255);        /* #FCFBFF */
+    --color-claro: rgb(247, 246, 254);        /* #F7F6FE */
+    --color-lila-claro: rgb(240, 238, 255);   /* #F0EEFF */
+    --color-gris: rgb(169, 169, 169);       /* #5D57F4 */
 
 
     /* Variables funcionales que usan los colores base */
@@ -20,9 +21,16 @@
     --fondo-tarjeta: var(--color-banco);
     --fondo-bloque: var(var(--color-claro));
     --fondo-tarjeta-lila: var(var(--color-lila-claro));
-    --texto-gris:rgba(var(--color-negro), 0.6);
 
+    /* Fuentes */
+    --fuente-cuerpos: "Poppins", sans-serif;
+    --fuente-titulos: "Montserrat", sans-serif;    
+
+    --espaciado: 1rem;
+    --fuente-base: 1rem;
+    --fuente-titulo: 2rem;
 }
+
 /* Utilidades */
 .container {
     max-width: 1440px;
@@ -33,33 +41,190 @@
     margin: 0 auto;
 }
 
-
-
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+.mt-4 {
+    margin-top: 4rem;
 }
 
-.montserrat {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+.mb-1 {
+    margin-bottom: 1rem;
 }
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mb-3 {
+    margin-bottom: 3rem;
+}
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+.pt-2 {
+    padding-top: 2rem;
+}
+.pt-3 {
+    padding-top: 3rem;
+}
+.pt-4 {
+    padding-top: 4rem;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.separador {   
+    margin: 1.2rem 0;
+    height: 4px;
+    width: 15rem;
+    background-color: var(--color-primario);
+}
+/* General */
+
+body {
+  font-size: var(--fuente-base);
+  font-family: var(--fuente-cuerpos);
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3 {
+  font-family: var(--fuente-titulos);
+}
+
+.btn {
+
+    margin-right: 1rem;
+    background-color: var(--color-primario);
+    color: var(--color-banco);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn:hover {
+
+    background-color: var(--color-banco);
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+
+}
+
+.btn-invertido {
+
+    margin-right: 1rem;
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--color-primario);
+    font-weight: 500;
+}
+
+.btn-invertido:hover {
+
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: 1px solid var(--color-primario);
+}
+
+
+.flex-2x {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-claro {
+    background-color: var(--color-banco);
+}
+
+/* General */
+
+
 
 /* navegacion */
-nav {
-    background-color: var(--color-banco);
+header {    
     position: sticky;
-    height: 60px;
+    top: 0;
+}
+
+nav {
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
-nav ul {
+.menu-links {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-between;    
     list-style: none;
 }
 
+.menu-links li {
+    padding: 10px;
+}   
+
+.nav-link{ 
+    text-decoration: none;    
+}    
+
+.nav-link:hover{ 
+    color: rgba(var(--color-primario), 0.6);   
+}    
+
 /* navegacion */
+
+/* Hero */
+#hero-text h1 {
+    font-size: 4rem;
+}
+#hero-text h2 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: var(--color-gris);
+}
+
+/* Hero */
+
+/* Servicios */
+
+.servicios-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
