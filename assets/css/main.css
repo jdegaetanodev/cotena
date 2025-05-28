@@ -35,6 +35,8 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
 }
 .container-fluid {
     max-width: 100%;
@@ -172,11 +174,41 @@ h1,h2,h3 {
     background-color: var(--color-banco);
 }
 
+.bg-primario {
+    background-color: var(--color-primario);
+}
+
+.header-h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-gris);    
+}
+
+.header-h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-negro);    
+}
+
+.header-p {
+    font-size: 1.2rem;
+    color: var(--color-gris);  
+    width: 75%;      
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
 /* General */
 
 
 
 /* navegacion */
+
+.container-nav {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 header {    
     position: sticky;
     top: 0;
@@ -210,6 +242,7 @@ nav {
 
 /* navegacion */
 
+
 /* Hero */
 #hero-text h1 {
     font-size: 4rem;
@@ -224,8 +257,90 @@ nav {
 
 /* Servicios */
 
+.flex-servicios {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
 .servicios-header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.card-servicio {
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-lila-claro);
+    border-radius: 10px;
+    padding: 2rem;    
+    width: 48%;
+    height: 280px;
+}
+
+.card-servicio-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.card-servicio-texto h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-negro);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.card-servicio-texto p{
+    font-size: 1.2rem;
+    color: var(--color-gris);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.card-servicio-texto a{
+    font-size: 1.2rem;
+    color: var(--color-primario);
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;   
+}
+
+.card-servicio-texto a:hover{
+    color: var(--color-negro);
+}    
+
+.servicio-icono {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .5rem;
+    background-color: var(--color-lila-claro);
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primario);    
+    font-size: 1.4rem;
+}
+
+
+/* Planes */
+
+.planes-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+/* Planes */
+
+/* FAQs */ 
+
+
+
+/* FAQs */ 

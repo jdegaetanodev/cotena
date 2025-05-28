@@ -10,16 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- FontAwesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 
 <body>
 
     <header class="container-fluid bg-claro"> <!-- Menu -->
 
-        <div  class="container">
+        <div  class="container-nav">
             <nav>
                 <div class="logo">
-                    <a href="index.html"><img src="assets/img/logo.png" alt="Logo Cotena"></a>
+                    <h2>COTENA</h2>
+                    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="Logo Cotena"></a> -->
                 </div>
 
                 <ul class="menu-links">
@@ -41,7 +46,7 @@
 
     </header>  <!-- /Menu -->
     
-    <section id="hero" class="container mt-4 flex-2x">
+    <section id="hero" class="container flex-2x">
 
         <div class="w-50 flex-col">
             <div id="hero-text">
@@ -60,24 +65,24 @@
         
     </section> <!-- /Hero -->
 
-    <section id="servicios" class="container-fluid bg-claro mt-4 pt-3">
+    <section id="servicios" class="container-fluid bg-claro mt-2">
         
         <div class="container">
 
-            <div class="servicios-header w-50 center">
-                <h2>Servicios</h2>
-                <h3>Impulsamos el crecimiento de tu negocio</h3>
+            <div class="servicios-header center">
+                <h2 class="header-h2">Servicios</h2>
+                <h3 class="header-h3">Impulsamos el crecimiento de tu negocio</h3>
                 <hr class="separador">
-                <p>Desde auditorías SEO hasta estrategias de contenido, ofrecemos soluciones integrales para mejorar tu visibilidad en buscadores y atraer visitas de calidad</p>
+                <p class="header-p">Desde auditorías SEO hasta estrategias de contenido, ofrecemos soluciones integrales para mejorar tu visibilidad en buscadores y atraer visitas de calidad</p>
             </div>
 
-            <div class="servicio-bloque-cards">
+            <div class="flex-servicios mb-2">
 
-                <div class="card">
-                    <div>
-                        <img src="#" alt="Icono ...">
+                <div class="card-servicio">
+                    <div class="w-25 servicio-icono">
+                        <i class="fa-solid fa-code"></i>
                     </div>
-                    <div>
+                    <div class="card-servicio-texto w-75">
                         <h3>Auditoría SEO técnica</h3>
                         <p>Analizamos el estado actual de tu sitio web para detectar errores técnicos, problemas de indexación y barreras que impiden un buen posicionamiento en buscadores.</p>
                         <a href="#">Leer más</a>
@@ -85,11 +90,11 @@
 
                 </div><!-- /card -->
 
-                <div class="card">
-                    <div>
-                        <img src="#" alt="Icono ...">
+                <div class="card-servicio">
+                    <div class="w-25 servicio-icono">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <div>
+                    <div class="card-servicio-texto w-75">
                         <h3>Investigación de palabras clave</h3>
                         <p>Identificamos las búsquedas más relevantes para tu negocio y tu audiencia, seleccionando palabras clave con alto potencial para atraer tráfico de calidad.</p>
                         <a href="#">Leer más</a>
@@ -97,11 +102,11 @@
 
                 </div><!-- /card -->
 
-                <div class="card">
-                    <div>
-                        <img src="#" alt="Icono ...">
+                <div class="card-servicio">
+                    <div class="w-25 servicio-icono">
+                        <i class="fa-regular fa-file-lines"></i>
                     </div>
-                    <div>
+                    <div class="card-servicio-texto w-75">
                         <h3>Estrategia de contenidos</h3>
                         <p>Desarrollamos un plan de contenidos basado en palabras clave y preguntas frecuentes de tus potenciales clientes, generando contenido útil que mejora tu posicionamiento y autoridad.</p>
                         <a href="#">Leer más</a>
@@ -109,11 +114,11 @@
 
                 </div><!-- /card -->           
                 
-                <div class="card">
-                    <div>
-                        <img src="#" alt="Icono ...">
+                <div class="card-servicio">
+                    <div class="w-25 servicio-icono">
+                        <i class="fa-solid fa-list-check"></i>
                     </div>
-                    <div>
+                    <div class="card-servicio-texto w-75">
                         <h3>Optimización On Page</h3>
                         <p>Mejoramos títulos, descripciones, encabezados, URLs y contenido para que cada página esté alineada con las mejores prácticas de SEO y sea más relevante para los motores de búsqueda.</p>
                         <a href="#">Leer más</a>
@@ -121,11 +126,11 @@
 
                 </div><!-- /card -->               
 
-                <div class="card">
-                    <div>
-                        <img src="#" alt="Icono ...">
+                <div class="card-servicio">
+                    <div class="w-25 servicio-icono">
+                        <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <div>
+                    <div class="card-servicio-texto w-75">
                         <h3>SEO local</h3>
                         <p>Optimizamos tu presencia en Google Maps y resultados locales para que potenciales clientes cercanos encuentren fácilmente tu negocio al buscar servicios como el tuyo</p>
                         <a href="#">Leer más</a>
@@ -133,11 +138,11 @@
 
                 </div><!-- /card -->  
 
-                <div class="card">
-                    <div>
-                        <img src="#" alt="Icono ...">
+                <div class="card-servicio">
+                    <div class="w-25 servicio-icono">
+                        <i class="fa-solid fa-chart-simple"></i>
                     </div>
-                    <div>
+                    <div class="card-servicio-texto w-75">
                         <h3>Reportes y seguimiento</h3>
                         <p>Te entregamos informes periódicos con métricas clave para que puedas seguir la evolución del posicionamiento, el tráfico orgánico y los resultados obtenidos</p>
                         <a href="#">Leer más</a>
@@ -151,422 +156,450 @@
 
     </section> <!-- Fin seccion Servicios -->
 
-    <section id="estrategia">
+    <section id="estrategia" class="container-fluid">
 
-        <div class="estrategia-header">
-            <h2>Estrategia</h2>
-            <h3>Un plan claro para posicionarte donde te buscan</h3>
-            <hr>
-            <p>Cada sitio es único, por eso diseñamos estrategias personalizadas. Evaluamos tu situación actual, definimos los pasos a seguir y aplicamos mejoras orientadas a resultados concretos y medibles.</p>
-        </div>
+        <div class="container">
 
-        <div class="pregunta">
-
-            <div>
-                <img src="" alt="">
+            <div class="estrategia-header">
+                <h2>Estrategia</h2>
+                <h3>Un plan claro para posicionarte donde te buscan</h3>
+                <hr>
+                <p>Cada sitio es único, por eso diseñamos estrategias personalizadas. Evaluamos tu situación actual, definimos los pasos a seguir y aplicamos mejoras orientadas a resultados concretos y medibles.</p>
             </div>
 
-            <div>
-                <span>PASO 1</span>
-                <h3>Análisis inicial</h3>
-                <p>Realizamos una auditoría SEO completa de tu sitio para identificar problemas técnicos, evaluar la estructura y conocer tu posicionamiento actual.</p>
-            </div>
+            <div class="pregunta">
 
-        </div> <!-- /Pregunta -->
+                <div>
+                    <img src="" alt="">
+                </div>
 
-        <div class="pregunta">
+                <div>
+                    <span>PASO 1</span>
+                    <h3>Análisis inicial</h3>
+                    <p>Realizamos una auditoría SEO completa de tu sitio para identificar problemas técnicos, evaluar la estructura y conocer tu posicionamiento actual.</p>
+                </div>
 
-            <div>
-                <img src="" alt="">
-            </div>
+            </div> <!-- /Pregunta -->
 
-            <div>
-                <span>PASO 2</span>
-                <h3>Definición de objetivos</h3>
-                <p>Establecemos metas claras y realistas en base a tus necesidades y al comportamiento de tu audiencia en los motores de búsqueda.</p>
-            </div>
+            <div class="pregunta">
 
-        </div> <!-- /Pregunta -->
+                <div>
+                    <img src="" alt="">
+                </div>
 
-        <div class="pregunta">
+                <div>
+                    <span>PASO 2</span>
+                    <h3>Definición de objetivos</h3>
+                    <p>Establecemos metas claras y realistas en base a tus necesidades y al comportamiento de tu audiencia en los motores de búsqueda.</p>
+                </div>
 
-            <div>
-                <img src="" alt="">
-            </div>
+            </div> <!-- /Pregunta -->
 
-            <div>
-                <span>PASO 3</span>
-                <h3>Diseño de estrategia</h3>
-                <p>Creamos un plan personalizado que abarca aspectos técnicos, contenido, palabras clave y posicionamiento local, adaptado a tu negocio.</p>
-            </div>
+            <div class="pregunta">
 
-        </div> <!-- /Pregunta -->
+                <div>
+                    <img src="" alt="">
+                </div>
 
-        <div class="pregunta">
+                <div>
+                    <span>PASO 3</span>
+                    <h3>Diseño de estrategia</h3>
+                    <p>Creamos un plan personalizado que abarca aspectos técnicos, contenido, palabras clave y posicionamiento local, adaptado a tu negocio.</p>
+                </div>
 
-            <div>
-                <img src="" alt="">
-            </div>
+            </div> <!-- /Pregunta -->
 
-            <div>
-                <span>PASO 4</span>
-                <h3>Implementación</h3>
-                <p>Ejecutamos las mejoras SEO en tu sitio, optimizamos contenido y aplicamos acciones técnicas para mejorar visibilidad y rendimiento.</p>
-            </div>
+            <div class="pregunta">
 
-        </div> <!-- /Pregunta -->
+                <div>
+                    <img src="" alt="">
+                </div>
 
-        <div class="pregunta">
+                <div>
+                    <span>PASO 4</span>
+                    <h3>Implementación</h3>
+                    <p>Ejecutamos las mejoras SEO en tu sitio, optimizamos contenido y aplicamos acciones técnicas para mejorar visibilidad y rendimiento.</p>
+                </div>
 
-            <div>
-                <img src="" alt="">
-            </div>
+            </div> <!-- /Pregunta -->
 
-            <div>
-                <span>PASO 5</span>
-                <h3>Monitoreo y ajustes</h3>
-                <p>Ejecutamos las mejoras SEO en tu sitio, optimizamos contenido y aplicamos acciones técnicas para mejorar visibilidad y rendimiento.</p>
-            </div>
+            <div class="pregunta">
 
-        </div> <!-- /Pregunta -->
+                <div>
+                    <img src="" alt="">
+                </div>
 
+                <div>
+                    <span>PASO 5</span>
+                    <h3>Monitoreo y ajustes</h3>
+                    <p>Ejecutamos las mejoras SEO en tu sitio, optimizamos contenido y aplicamos acciones técnicas para mejorar visibilidad y rendimiento.</p>
+                </div>
+
+            </div> <!-- /Pregunta -->
+
+        </div> <!-- /container -->
 
     </section> <!-- Fin seccion Estrategia -->
 
-    <section id="cta">
-        <h2>¿Listo para hacer crecer tu presencia online?</h2>
-        <h3>Estrategias SEO efectivas, planes a tu medida y resultados que se ven.</h3>
-        <a href="#">Quiero una auditoria gratuita</a>
+    <section id="cta" class="container-fluid bg-primario">
+        
+        <div class="container">
+            <h2>¿Listo para hacer crecer tu presencia online?</h2>
+            <h3>Estrategias SEO efectivas, planes a tu medida y resultados que se ven.</h3>
+            <a href="#">Quiero una auditoria gratuita</a>
+        </div>
+
     </section> <!-- Fin seccion CTA -->
 
-    <div id="beneficios">
+    <div id="beneficios" class="container-fluid">
 
-        <div class="beneficios-header">
-            <h2>¿Por qué elegirnos?</h2>
-            <h3>Sabemos lo que funciona y cómo aplicarlo</h3>
-            <hr>
-            <p>Elegirnos significa trabajar con un equipo enfocado en generar resultados reales. No solo posicionamos tu sitio: mejoramos su rendimiento, aumentamos tu visibilidad y te ayudamos a convertir visitas en oportunidades concretas.</p>
-        </div>    
+        <div class="container">
 
-        <div class="beneficio-cards">
+            <div class="beneficios-header">
+                <h2>¿Por qué elegirnos?</h2>
+                <h3>Sabemos lo que funciona y cómo aplicarlo</h3>
+                <hr>
+                <p>Elegirnos significa trabajar con un equipo enfocado en generar resultados reales. No solo posicionamos tu sitio: mejoramos su rendimiento, aumentamos tu visibilidad y te ayudamos a convertir visitas en oportunidades concretas.</p>
+            </div>    
 
-            <div class="card">
-                <div>
-                    <img src="#" alt="Icono ...">
-                </div>
-                <div>
-                    <h3>Mejor visibilidad en buscadores</h3>
-                    <p>Optimizamos tu sitio para que aparezca en los primeros resultados de Google, aumentando tu exposición frente a potenciales clientes.</p>
-                </div>
-            </div><!-- /card -->
+            <div class="beneficio-cards">
 
-            <div class="card">
-                <div>
-                    <img src="#" alt="Icono ...">
-                </div>
-                <div>
-                    <h3> Aumento del tráfico orgánico</h3>
-                    <p>Al posicionarte mejor en las búsquedas, tu sitio comienza a recibir más visitas sin depender exclusivamente de la publicidad paga.</p>
-                </div>
-            </div><!-- /card -->
+                <div class="card">
+                    <div>
+                        <img src="#" alt="Icono ...">
+                    </div>
+                    <div>
+                        <h3>Mejor visibilidad en buscadores</h3>
+                        <p>Optimizamos tu sitio para que aparezca en los primeros resultados de Google, aumentando tu exposición frente a potenciales clientes.</p>
+                    </div>
+                </div><!-- /card -->
 
-            <div class="card">
-                <div>
-                    <img src="#" alt="Icono ...">
-                </div>
-                <div>
-                    <h3>Mejor experiencia de usuario</h3>
-                    <p>Un sitio rápido, claro y bien estructurado mejora la navegación del usuario y aumenta el tiempo de permanencia y la tasa de conversión.</p>
-                </div>
-            </div><!-- /card -->
+                <div class="card">
+                    <div>
+                        <img src="#" alt="Icono ...">
+                    </div>
+                    <div>
+                        <h3> Aumento del tráfico orgánico</h3>
+                        <p>Al posicionarte mejor en las búsquedas, tu sitio comienza a recibir más visitas sin depender exclusivamente de la publicidad paga.</p>
+                    </div>
+                </div><!-- /card -->
 
-            <div class="card">
-                <div>
-                    <img src="#" alt="Icono ...">
-                </div>
-                <div>
-                    <h3>Más conversiones</h3>
-                   <p>Un mejor posicionamiento atrae tráfico calificado, lo que se traduce en más consultas, ventas concretas o reservas efectivas para tu negocio.</p>
-                </div>
-            </div><!-- /card -->
+                <div class="card">
+                    <div>
+                        <img src="#" alt="Icono ...">
+                    </div>
+                    <div>
+                        <h3>Mejor experiencia de usuario</h3>
+                        <p>Un sitio rápido, claro y bien estructurado mejora la navegación del usuario y aumenta el tiempo de permanencia y la tasa de conversión.</p>
+                    </div>
+                </div><!-- /card -->
 
-            <div class="card">
-                <div>
-                    <img src="#" alt="Icono ...">
-                </div>
-                <div>
-                    <h3>Reportes y seguimiento</h3>
-                    <p>Te enviamos reportes periódicos con métricas clave para que sepas exactamente cómo está evolucionando tu posicionamiento y el rendimiento de la estrategia.</p>
-                </div>
-            </div><!-- /card -->
+                <div class="card">
+                    <div>
+                        <img src="#" alt="Icono ...">
+                    </div>
+                    <div>
+                        <h3>Más conversiones</h3>
+                    <p>Un mejor posicionamiento atrae tráfico calificado, lo que se traduce en más consultas, ventas concretas o reservas efectivas para tu negocio.</p>
+                    </div>
+                </div><!-- /card -->
 
-        </div>
+                <div class="card">
+                    <div>
+                        <img src="#" alt="Icono ...">
+                    </div>
+                    <div>
+                        <h3>Reportes y seguimiento</h3>
+                        <p>Te enviamos reportes periódicos con métricas clave para que sepas exactamente cómo está evolucionando tu posicionamiento y el rendimiento de la estrategia.</p>
+                    </div>
+                </div><!-- /card -->
+
+            </div>
+
+        </div> <!-- /container -->
 
     </div> <!-- Fin seccion Beneficios -->
 
-    <div id="planes">
+    <div id="planes" class="container-fluid bg-claro">
 
-        <div class="planes-header">
-            <h2>Planes</h2>
-            <h3>Estrategias adaptadas a cada etapa de tu negocio</h3>
-            <hr>
-        </div>   
+        <div class="container">
 
-        <div class="plan">
-            <h2>Plan básico</h2>
-            <h3>$40.000<span> / mes</span></h3>
-            <p>La base para empezar a posicionarte</p>
+            <div class="planes-header">
+                <h2>Planes</h2>
+                <h3>Estrategias adaptadas a cada etapa de tu negocio</h3>
+                <hr>
+            </div>   
 
-            <h3>Servicios incluidos</h3>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>Optimización SEO on-page básica</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Estudio de palabras clave inicial</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Revisión técnica del sitio</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Informes mensuales básicos</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Soporte por email</p>
-                </li>
-            </ul>
+            <div class="planes-container">
 
-            <a href="#">comprar ahora</a>
+                <div class="plan">
+                    <h2>Plan básico</h2>
+                    <h3>$40.000<span> / mes</span></h3>
+                    <p>La base para empezar a posicionarte</p>
 
-        </div> <!-- /plan -->
+                    <h3>Servicios incluidos</h3>
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <p>Optimización SEO on-page básica</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Estudio de palabras clave inicial</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Revisión técnica del sitio</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Informes mensuales básicos</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Soporte por email</p>
+                        </li>
+                    </ul>
 
-        <div class="plan">
+                    <a href="#">comprar ahora</a>
 
-            <div>mas elegido</div>
+                </div> <!-- /plan -->
 
-            <h2>Plan Profesional</h2>
-            <h3>$60.000<span> / mes</span></h3>
-            <p>Para negocios que quieren crecer</p>
+                <div class="plan">
 
-            <h3>Servicios incluidos</h3>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>Todo lo del Plan Básico</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Estrategia SEO personalizada</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Creación de contenido optimizado</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Linkbuilding básico</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Informes detallados</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Consultoría mensual por meet</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Soporte vía WhatsApp</p>
-                </li>
-            </ul>
+                    <div>mas elegido</div>
 
-            <a href="#">comprar ahora</a>
-            
-        </div> <!-- /plan -->
-        
-        <div class="plan">
-            <h2>Plan Escala</h2>
-            <h3>$100.000<span> / mes</span></h3>
-            <p>Para competir en los primeros puestos</p>
+                    <h2>Plan Profesional</h2>
+                    <h3>$60.000<span> / mes</span></h3>
+                    <p>Para negocios que quieren crecer</p>
 
-            <h3>Servicios incluidos</h3>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>Todo lo del Plan Profesional</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Auditoría técnica avanzada</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Estrategia de contenido avanzada</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>SEO local o ecommerce avanzado</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Consultoría prioritaria</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>Soporte vía WhatsApp</p>
-                </li>
-            </ul>
+                    <h3>Servicios incluidos</h3>
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <p>Todo lo del Plan Básico</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Estrategia SEO personalizada</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Creación de contenido optimizado</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Linkbuilding básico</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Informes detallados</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Consultoría mensual por meet</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Soporte vía WhatsApp</p>
+                        </li>
+                    </ul>
 
-            <a href="#">comprar ahora</a>
-            
-        </div> <!-- /plan -->        
+                    <a href="#">comprar ahora</a>
+                    
+                </div> <!-- /plan -->
+                
+                <div class="plan">
+                    <h2>Plan Escala</h2>
+                    <h3>$100.000<span> / mes</span></h3>
+                    <p>Para competir en los primeros puestos</p>
+
+                    <h3>Servicios incluidos</h3>
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <p>Todo lo del Plan Profesional</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Auditoría técnica avanzada</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Estrategia de contenido avanzada</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>SEO local o ecommerce avanzado</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Consultoría prioritaria</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Soporte vía WhatsApp</p>
+                        </li>
+                    </ul>
+
+                    <a href="#">comprar ahora</a>
+                    
+                </div> <!-- /plan -->       
+                
+            </div>
+
+        </div>
 
     </div> <!-- Fin seccion Planes -->
 
-    <div id="faqs">
+    <div id="faqs" class="container-fluid">
 
-        <div class="faqs-header">
-            <h2>Preguntas frecuentes</h2>
-            <h3>Respondemos lo que muchos quieren saber antes de comenzar.</h3>
-            <hr>
-        </div>   
+        <div class="container">
 
-        <div>
+            <div class="faqs-header">
+                <h2>Preguntas frecuentes</h2>
+                <h3>Respondemos lo que muchos quieren saber antes de comenzar.</h3>
+                <hr>
+            </div>   
 
-            <div class="lista-faqs">
+            <div>
 
-                <div class="faq">
-                    <div>
-                        <h3>¿Cuánto tiempo tarda en verse el resultado del SEO?</h3>
-                        <p>El SEO es un proceso progresivo. Por lo general, se empiezan a ver mejoras entre los 3 y 6 meses, dependiendo del estado inicial del sitio y la competencia del rubro.</p>
-                    </div>
-                    <div>
-                        <img src="#" alt="">
-                    </div>
-                </div> <!-- /faq -->
+                <div class="lista-faqs">
 
-                <div class="faq">
-                    <div>
-                        <h3>¿Puedo cancelar el servicio en cualquier momento?</h3>
-                    </div>
-                    <div>
-                        <img src="#" alt="">
-                    </div>
-                </div> <!-- /faq -->             
-                
-                <div class="faq">
-                    <div>
-                        <h3>¿Qué diferencia hay entre los planes?</h3>
-                    </div>
-                    <div>
-                        <img src="#" alt="">
-                    </div>
-                </div> <!-- /faq -->    
+                    <div class="faq">
+                        <div>
+                            <h3>¿Cuánto tiempo tarda en verse el resultado del SEO?</h3>
+                            <p>El SEO es un proceso progresivo. Por lo general, se empiezan a ver mejoras entre los 3 y 6 meses, dependiendo del estado inicial del sitio y la competencia del rubro.</p>
+                        </div>
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                    </div> <!-- /faq -->
 
-                <div class="faq">
-                    <div>
-                        <h3>¿Qué tipo de negocios pueden contratar el servicio?</h3>
-                    </div>
-                    <div>
-                        <img src="#" alt="">
-                    </div>
-                </div> <!-- /faq -->    
-                                
-                <div class="faq">
-                    <div>
-                        <h3>¿Trabajan solo con sitios nuevos o también ya posicionados?</h3>
-                    </div>
-                    <div>
-                        <img src="#" alt="">
-                    </div>
-                </div> <!-- /faq -->                    
+                    <div class="faq">
+                        <div>
+                            <h3>¿Puedo cancelar el servicio en cualquier momento?</h3>
+                        </div>
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                    </div> <!-- /faq -->             
+                    
+                    <div class="faq">
+                        <div>
+                            <h3>¿Qué diferencia hay entre los planes?</h3>
+                        </div>
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                    </div> <!-- /faq -->    
 
-                <div class="faq">
-                    <div>
-                        <h3>¿Incluyen contenido para el blog?</h3>
-                    </div>
-                    <div>
-                        <img src="#" alt="">
-                    </div>
-                </div> <!-- /faq -->                    
+                    <div class="faq">
+                        <div>
+                            <h3>¿Qué tipo de negocios pueden contratar el servicio?</h3>
+                        </div>
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                    </div> <!-- /faq -->    
+                                    
+                    <div class="faq">
+                        <div>
+                            <h3>¿Trabajan solo con sitios nuevos o también ya posicionados?</h3>
+                        </div>
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                    </div> <!-- /faq -->                    
 
-            </div> <!-- /lista-faqs -->
+                    <div class="faq">
+                        <div>
+                            <h3>¿Incluyen contenido para el blog?</h3>
+                        </div>
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                    </div> <!-- /faq -->                    
 
-            <div class="atencion">
-                <h2>Atención personalizada</h2>
-                <p>Cada negocio es único, y su estrategia SEO también debería serlo. No trabajamos con soluciones enlatadas ni automatizadas. Nos tomamos el tiempo de conocer tu rubro, analizar tu sitio en profundidad
-y diseñar una estrategia alineada con tus objetivos reales.Ya sea que estés empezando o quieras mejorar tu posicionamiento actual, te acompañamos con asesoramiento claro, seguimiento
-constante y reportes que podés entender.</p>
+                </div> <!-- /lista-faqs -->
 
-                <a href="#">HABLÁ CON UN ASESOR</a>
+                <div class="atencion">
+                    <h2>Atención personalizada</h2>
+                    <p>Cada negocio es único, y su estrategia SEO también debería serlo. No trabajamos con soluciones enlatadas ni automatizadas. Nos tomamos el tiempo de conocer tu rubro, analizar tu sitio en profundidad
+    y diseñar una estrategia alineada con tus objetivos reales.Ya sea que estés empezando o quieras mejorar tu posicionamiento actual, te acompañamos con asesoramiento claro, seguimiento
+    constante y reportes que podés entender.</p>
 
-            </div> <!-- /atencion -->
+                    <a href="#">HABLÁ CON UN ASESOR</a>
 
-        </div>
+                </div> <!-- /atencion -->
+
+            </div>
+
+        </div> <!-- /container -->
 
     </div> <!-- Fin seccion FAQs -->
 
-    <div id="contacto">
+    <div id="contacto" class="container-fluid">
 
-        <div class="contacto-header">
-            <h2>¿Listo para comenzar?</h2>
-            <h3>Respondemos lo que muchos quieren saber antes de comenzar.</h3>
-            <hr>
-        </div>   
+        <div class="container">
 
-        <div class="contacto-main">
+            <div class="contacto-header">
+                <h2>¿Listo para comenzar?</h2>
+                <h3>Respondemos lo que muchos quieren saber antes de comenzar.</h3>
+                <hr>
+            </div>   
 
-            <div class="contacto">
-                <form action="">
-                    <div class="campo">
-                        <label for="nombre">Tu nombre</label>
-                        <input type="text" name="nombre" id="nombre">
-                    </div>
-                    <div class="campo">
-                        <label for="email">Tu email</label>
-                        <input type="text" name="email" id="email">
-                    </div>
-                    <div class="campo">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" name="asunto" id="asunto">
-                    </div>
-                    <div class="campo">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje"></textarea>
-                    </div>
+            <div class="contacto-main">
 
-                    <button type="submit">Enviar mensaje</button>
-                </form>
-            </div>
+                <div class="contacto">
+                    <form action="">
+                        <div class="campo">
+                            <label for="nombre">Tu nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="email">Tu email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="campo">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" name="asunto" id="asunto">
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje"></textarea>
+                        </div>
 
-            <div class="contacto-info">
-                
-                <div class="contacto-card">
-                    <img src="" alt="Logo de WhatsApp">
-                    <h2>WhatsApp</h2>
-                    <a href="#">Hablemos</a>
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
                 </div>
 
-                <div class="contacto-card">
-                    <img src="" alt="Icono de un reloj">
-                    <h2>Horario de atención</h2>
-                    <p>Lunes a viernes</p>
-                    <p>10:00 - 19:00</p>
-                </div>
+                <div class="contacto-info">
+                    
+                    <div class="contacto-card">
+                        <img src="" alt="Logo de WhatsApp">
+                        <h2>WhatsApp</h2>
+                        <a href="#">Hablemos</a>
+                    </div>
 
+                    <div class="contacto-card">
+                        <img src="" alt="Icono de un reloj">
+                        <h2>Horario de atención</h2>
+                        <p>Lunes a viernes</p>
+                        <p>10:00 - 19:00</p>
+                    </div>
+
+                </div>
             </div>
-        </div>
+
+        </div> <!-- /container -->
 
     </div> <!-- Fin seccion Contacto -->
 
-    <footer>
+    <footer class="container-fluid bg-primario">
 
-        <div class="footer-main">
+        <div class="footer-main container">
+
             <div class="footer-cotena">
                 <h2>Cotena</h2>
                 <h3>Posicionamiento Web Profesional</h3>
@@ -592,11 +625,13 @@ constante y reportes que podés entender.</p>
                     <li>Contacto</li>
                 </ul>
             </div>
+
+            <div class="derechos">
+                <p>© 2025 Cotena. Todos los derechos reservados.</p>
+            </div>
+
         </div>
 
-        <div class="derechos">
-            <p>© 2025 Cotena. Todos los derechos reservados.</p>
-        </div>
     </footer>
 
 </body>
