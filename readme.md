@@ -17,3 +17,11 @@ Dentro de assets/media/diseño/cotena.pdf
 - El sitio aún no es responsive
 - Falta funcionalidad en Links y Botones
 - Me gustaria aprender e incluir animaciones básicas
+
+
+- Nav le falta color de fondo porque parece transparente
+- Bloques de auditoria > cambiar color de fondo
+- Botones > error en fuente blanca
+- Ampliar el título
+- Boton flotante de whatsapp
+- hover en el botón del cta

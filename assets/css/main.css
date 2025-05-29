@@ -10,17 +10,10 @@
     /* Colores base */
     --color-primario: rgb(93, 87, 244);       /* #5D57F4 */
     --color-negro: rgb(26, 26, 26);           /* #1A1A1A */
-    --color-banco: rgb(252, 251, 255);        /* #FCFBFF */
+    --color-blanco: rgb(252, 251, 255);        /* #FCFBFF */
     --color-claro: rgb(247, 246, 254);        /* #F7F6FE */
     --color-lila-claro: rgb(240, 238, 255);   /* #F0EEFF */
     --color-gris: rgb(169, 169, 169);       /* #5D57F4 */
-
-
-    /* Variables funcionales que usan los colores base */
-    --borde-tarjeta: rgba(var(--color-primario), 0.1);
-    --fondo-tarjeta: var(--color-banco);
-    --fondo-bloque: var(var(--color-claro));
-    --fondo-tarjeta-lila: var(var(--color-lila-claro));
 
     /* Fuentes */
     --fuente-cuerpos: "Poppins", sans-serif;
@@ -104,6 +97,7 @@
     width: 15rem;
     background-color: var(--color-primario);
 }
+
 /* General */
 
 body {
@@ -240,6 +234,18 @@ nav {
     color: rgba(var(--color-primario), 0.6);   
 }    
 
+.logo-container {
+    display: flex;
+    align-items: center;    
+    color: var(--color-primario);
+}
+
+.logo {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--color-primario);
+}
+
 /* navegacion */
 
 
@@ -327,6 +333,99 @@ nav {
     font-size: 1.4rem;
 }
 
+/* Estrategia */
+
+.estrategia-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 2rem;
+}
+
+.pregunta-icono-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-lila-claro);   
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-size: 30px;
+}
+
+.pregunta-tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-lila-claro);    
+    width: 90%;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.pregunta-tarjeta span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primario);
+}  
+
+.pregunta-tarjeta h3 {
+    font-size: 1.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+}    
+
+.pregunta-tarjeta p {
+    font-size: 1.2rem;
+    color: var(--color-gris);
+}
+
+/* CTA */
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;    
+}
+
+.cta-h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-blanco);    
+    margin-bottom: 1.5rem;
+}
+
+.cta-h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-blanco);    
+    margin-bottom: 4rem;
+}
+
+.btn-cta {
+
+    margin-right: 1rem;
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* CTA */
+
 
 /* Planes */
 
@@ -339,8 +438,30 @@ nav {
 
 /* Planes */
 
-/* FAQs */ 
 
+/* Contacto */
 
+.contacto-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;  
+}
 
-/* FAQs */ 
+.contacto-main {
+    display: flex;
+}
+
+.contacto-card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+
+}
+
+/* Contacto */
