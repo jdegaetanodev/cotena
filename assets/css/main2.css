@@ -1,0 +1,108 @@
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root {
+    
+    /* Colores base */
+    --color-primario: #5d57f4; 
+    --color-blanco: #fcfbff; 
+    --color-negro: #1A1A1A; 
+
+    /* Fuentes */
+    --fuente-cuerpos: "Poppins", sans-serif;
+    --fuente-titulos: "Montserrat", sans-serif;    
+    --fuente-base: 1rem;
+}
+
+/* Fondos */
+.bg-blanco {
+    background-color: var(--color-blanco);    
+}
+.bg-primario {
+    background-color: var(--color-primario);    
+}
+
+/* --- <General> --- */
+
+body {
+  font-size: var(--fuente-base);
+  font-family: var(--fuente-cuerpos);
+}
+h1,h2,h3 {
+  font-family: var(--fuente-titulos);
+}
+
+/* --- </General> --- */
+
+
+/* --- <Botones> --- */
+
+.btn {
+    margin-right: 1rem;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.btn:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+}
+
+/* --- </Botones> --- */
+
+
+/* --- <Menu> --- */
+
+header {    
+    position: sticky;
+    top: 0;
+}
+nav {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+/* <Logo> */ 
+.logo-container {
+    display: flex;
+    align-items: center;    
+    color: var(--color-primario);
+}
+/* </Logo> */ 
+
+
+/* <Links> */
+.menu-links {
+    display: flex;
+    justify-content: space-between;    
+    list-style: none;
+}
+
+.menu-links li {
+    padding: 1rem;
+}   
+
+.nav-link{ 
+    text-decoration: none;    
+}    
+
+.nav-link:hover{ 
+    font-weight: 700;
+    color: var(--color-negro);   
+}    
+/* </Links> */
+
+
+/* --- </Menu> --- */

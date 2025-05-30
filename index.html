@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/tools.css">
 
     <!-- FontAwesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -48,20 +49,20 @@
 
     </header>  <!-- /Menu -->
     
-    <section id="hero" class="container flex-2x">
+    <section id="hero" class="container hero-grid">
 
-        <div class="w-50 flex-col">
+        <div class="flex-center">
             <div id="hero-text">
                 <h1>Aumenta tu visibilidad en Google</h1>
                 <h2 class="mt-1">Posicionamos tu web donde tus clientes te están buscando</h2>
             </div>
-            <div id="hero-buttons" class="mt-3">
+            <div id="hero-buttons" class="mt-4">
                 <a href="#" class="btn">Quiero una auditoria gratuita</a>
                 <a href="#" class="btn-invertido mt-2">Nuestros servicios</a>
             </div>
         </div>
 
-        <div class="w-50">
+        <div class="flex-center">
             <img src="assets/media/data.svg" alt="Imagen de fondo del hero, una chica viendo gráficos estadisticos">
         </div>
         
@@ -551,18 +552,22 @@
                 <hr class="separador">
             </div>   
 
-            <div class="contacto-main">
+            <div class="contacto-grid">
 
-                <div class="contacto w-75">
+                <div class="contacto-form">
                     <form action="">
-                        <div class="campo">
-                            <label for="nombre">Tu nombre</label>
-                            <input type="text" name="nombre" id="nombre">
+
+                        <div class="fila">
+                            <div class="campo">
+                                <label for="nombre">Tu nombre</label>
+                                <input type="text" name="nombre" id="nombre" class="txt-form">
+                            </div>
+                            <div class="campo">
+                                <label for="email">Tu email</label>
+                                <input type="text" name="email" id="email" class="txt-form">
+                            </div>
                         </div>
-                        <div class="campo">
-                            <label for="email">Tu email</label>
-                            <input type="text" name="email" id="email">
-                        </div>
+
                         <div class="campo">
                             <label for="asunto">Asunto</label>
                             <input type="text" name="asunto" id="asunto">
@@ -576,7 +581,7 @@
                     </form>
                 </div>
 
-                <div class="contacto-info w-25">
+                <div class="contacto-info">
                     
                     <div class="contacto-card">
                         <i class="fa-brands fa-whatsapp"></i>
