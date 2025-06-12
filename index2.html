@@ -9,45 +9,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main2.css">
-    <link rel="stylesheet" href="assets//css/tools.css">
+    
+    <!-- Bootstrap 5.3.6 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">    
 
     <!-- FontAwesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
     <!-- Menu -->
 
-    <header class="container-fluid bg-lila-claro">
+    <header class="container-fluid bg-body-tertiary">
 
         <div  class="container">
-            <nav>
-                <div class="logo-container">                    
-                    <div class="logo-text">
+
+            <!-- <navbar> -->
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" href="#">
                         <h2>COTENA</h2>
-                        <p>Posicionamiento en buscadores</p>
-                    </div>
-                </div>
+                    </a>
+                    
 
-                <ul class="menu">
-                    <li class="menu-items p-1"><a href="#" class="nav-link">Inicio</a></li>
-                    <li class="menu-items p-1"><a href="#" class="nav-link">Servicios</a></li>
-                    <li class="menu-items p-1"><a href="#" class="nav-link">Beneficios</a></li>
-                    <li class="menu-items p-1"><a href="#" class="nav-link">Testimonios</a></li>
-                    <li class="menu-items p-1"><a href="#" class="nav-link">Estrategia</a></li>
-                    <li class="menu-items p-1"><a href="#" class="nav-link">Planes</a></li>
-                    <li class="menu-items p-1"><a href="#" class="nav-link">Blog</a></li>
-                </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>                  
 
-                <div>
-                    <a href="#" class="btn">Hablemos</a>
-                </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-center">
 
-                <div class="menu-toggle" id="menu-toggle">
-                    <i class="fa-solid fa-bars icono-hamburguesa" id="icono-menu"></i>
-                </div>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                            </li>
 
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicios">Servicios</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#beneficios">Beneficios</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonios">Testimonios</a>
+                            </li>                           
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#estrategia">Estrategia</a>
+                            </li>                                                       
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#planes">Planes</a>
+                            </li>                           
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li>                           
+
+                        </ul>
+
+                        <a href="#" class="button">Hablemos</a>
+
+                    </div> <!--</collapsable-->                                        
+
+                </div> <!--</container fuid-->
             </nav>
+
+            <!-- </navbar> -->
+
         </div>
 
     </header>  
@@ -56,30 +91,221 @@
 
     <!-- Hero -->
 
-    <section class="container hero-flex pt-5 pb-5">
+    <section class="container mt-5 mb-5" id="hero">
 
-        <div class="hero-item">
-            <div>
-                <h1>Aumenta tu visibilidad en Google</h1>
-                <h2 class="mt-1">Posicionamos tu web donde tus clientes te están buscando</h2>
-            </div>
-            <div class="hero-buttons mt-3">
-                <a href="#" class="btn">Quiero una auditoria gratuita</a>
-                <a href="#" class="btn-invertido">Nuestros servicios</a>
-            </div>
-        </div>
+        <div class="row d-flex">
 
-        <div class="hero-item">
-            <img src="assets/media/data.svg" alt="Imagen de fondo del hero, una chica viendo gráficos estadisticos">
+            <div class="col-md-12 col-lg-6 d-flex flex-column justify-content-center">
+                <div>
+                    <h1>Aumenta tu visibilidad en Buscadores</h1>
+                    <h2>Posicionamos tu web donde tus clientes te están buscando</h2>
+                </div>
+                <div class="d-flex flex-column flex-lg-row gap-2 mt-5">
+                    <a href="#" class="button">Quiero una auditoria gratuita</a>
+                    <a href="#" class="button-i">Nuestros servicios</a>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                <img src="assets/media/data.svg" alt="Imagen de fondo del hero, una chica viendo gráficos estadisticos" class="img-fluid">
+            </div>
+        
         </div>
         
     </section>
 
     <!-- /Hero -->
 
+    <section id="servicios" class="container-fluid bg-body-tertiary mt-5 mb-5">
+        
+        <div class="container pt-5 pb-5">
+
+            <div class="d-flex flex-column align-items-center">
+                <h2 class="header-h2">Servicios</h2>
+                <h3 class="header-h3 text-center">Impulsamos el crecimiento de tu negocio</h3>
+                <hr class="separador">
+                <p class="header-text pb-4 text-center">Desde auditorías SEO hasta estrategias de contenido, ofrecemos soluciones integrales para mejorar tu visibilidad en buscadores y atraer visitas de calidad</p>
+            </div>
+
+            <div class="grid-servicios">
+
+                <div class="card-servicio">
+                    <div class="w-20 servicio-icono">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="card-servicio-texto w-80">
+                        <h3>Auditoría SEO técnica</h3>
+                        <p>Analizamos el estado actual de tu sitio web para detectar errores técnicos, problemas de indexación y barreras que impiden un buen posicionamiento en buscadores.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+
+                </div><!-- /card -->
+
+                <div class="card-servicio">
+                    <div class="w-20 servicio-icono">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="card-servicio-texto w-80">
+                        <h3>Investigación de palabras clave</h3>
+                        <p>Identificamos las búsquedas más relevantes para tu negocio y tu audiencia, seleccionando palabras clave con alto potencial para atraer tráfico de calidad.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+
+                </div><!-- /card -->
+
+                <div class="card-servicio">
+                    <div class="w-20 servicio-icono">
+                        <i class="fa-regular fa-file-lines"></i>
+                    </div>
+                    <div class="card-servicio-texto w-80">
+                        <h3>Estrategia de contenidos</h3>
+                        <p>Desarrollamos un plan de contenidos basado en palabras clave y preguntas frecuentes de tus potenciales clientes, generando contenido útil que mejora tu posicionamiento y autoridad.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+
+                </div><!-- /card -->           
+                
+                <div class="card-servicio">
+                    <div class="w-20 servicio-icono">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="card-servicio-texto w-80">
+                        <h3>Optimización On Page</h3>
+                        <p>Mejoramos títulos, descripciones, encabezados, URLs y contenido para que cada página esté alineada con las mejores prácticas de SEO y sea más relevante para los motores de búsqueda.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+
+                </div><!-- /card -->               
+
+                <div class="card-servicio">
+                    <div class="w-20 servicio-icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="card-servicio-texto w-80">
+                        <h3>SEO local</h3>
+                        <p>Optimizamos tu presencia en Google Maps y resultados locales para que potenciales clientes cercanos encuentren fácilmente tu negocio al buscar servicios como el tuyo</p>
+                        <a href="#">Leer más</a>
+                    </div>
+
+                </div><!-- /card -->  
+
+                <div class="card-servicio">
+                    <div class="w-20 servicio-icono">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <div class="card-servicio-texto w-80">
+                        <h3>Reportes y seguimiento</h3>
+                        <p>Te entregamos informes periódicos con métricas clave para que puedas seguir la evolución del posicionamiento, el tráfico orgánico y los resultados obtenidos</p>
+                        <a href="#">Leer más</a>
+                    </div>
+
+                </div><!-- /card -->  
+
+            </div> <!-- /servicio-bloque-cards -->
+
+        </div>
+
+    </section> <!-- Fin seccion Servicios -->
+
+
+    <section id="estrategia" class="container-fluid">
+
+        <div class="container">
+
+            <div class="estrategia-header">
+                <h2 class="header-h2">Estrategia</h2>
+                <h3 class="header-h3">Un plan claro para posicionarte donde te buscan</h3>
+                <hr class="separador">
+                <p class="header-p">Cada sitio es único, por eso diseñamos estrategias personalizadas. Evaluamos tu situación actual, definimos los pasos a seguir y aplicamos mejoras orientadas a resultados concretos y medibles.</p>
+            </div>
+
+            <div class="pregunta">
+
+                <div class="pregunta-icono-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="pregunta-tarjeta">
+                    <span>PASO 1</span>
+                    <h3>Análisis inicial</h3>
+                    <p>Realizamos una auditoría SEO completa de tu sitio para identificar problemas técnicos, evaluar la estructura y conocer tu posicionamiento actual.</p>
+                </div>
+
+            </div> <!-- /Pregunta -->
+
+            <div class="pregunta">
+
+                <div class="pregunta-tarjeta">
+                    <span>PASO 2</span>
+                    <h3>Definición de objetivos</h3>
+                    <p>Establecemos metas claras y realistas en base a tus necesidades y al comportamiento de tu audiencia en los motores de búsqueda.</p>
+                </div>
+
+                <div class="pregunta-icono-container">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+
+            </div> <!-- /Pregunta -->
+
+            <div class="pregunta">
+
+                <div class="pregunta-icono-container">
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+
+                <div class="pregunta-tarjeta">
+                    <span>PASO 3</span>
+                    <h3>Diseño de estrategia</h3>
+                    <p>Creamos un plan personalizado que abarca aspectos técnicos, contenido, palabras clave y posicionamiento local, adaptado a tu negocio.</p>
+                </div>
+
+            </div> <!-- /Pregunta -->
+
+            <div class="pregunta">
+
+                <div class="pregunta-tarjeta">
+                    <span>PASO 4</span>
+                    <h3>Implementación</h3>
+                    <p>Ejecutamos las mejoras SEO en tu sitio, optimizamos contenido y aplicamos acciones técnicas para mejorar visibilidad y rendimiento.</p>
+                </div>
+
+                <div class="pregunta-icono-container">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+
+            </div> <!-- /Pregunta -->
+
+            <div class="pregunta">
+
+                <div class="pregunta-icono-container">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+
+                <div class="pregunta-tarjeta">
+                    <span>PASO 5</span>
+                    <h3>Monitoreo y ajustes</h3>
+                    <p>Ejecutamos las mejoras SEO en tu sitio, optimizamos contenido y aplicamos acciones técnicas para mejorar visibilidad y rendimiento.</p>
+                </div>
+
+            </div> <!-- /Pregunta -->
+
+        </div> <!-- /container -->
+
+    </section> <!-- Fin seccion Estrategia -->
+
+    <section id="cta" class="container-fluid bg-primario">
+        
+        <div class="container cta">
+            <h2 class="cta-h2">¿Listo para hacer crecer tu presencia online?</h2>
+            <h3 class="cta-h3">Estrategias SEO efectivas, planes a tu medida y resultados que se ven.</h3>
+            <a href="#" class="btn-cta">Quiero una auditoria gratuita</a>
+        </div>
+
+    </section> <!-- Fin seccion CTA -->
 
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
