@@ -164,6 +164,7 @@ h1,h2,h3 {
 
 .card-servicio {
     display: flex;
+    flex-direction: row;
     align-items: center;
     background-color: #FFFFFF;
     border: 1px solid var(--color-lila-claro);
@@ -206,8 +207,8 @@ h1,h2,h3 {
 }    
 
 .servicio-icono {
-    width: 4rem;
-    height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
     border-radius: .5rem;
     background-color: var(--color-lila-claro);
     margin-right: 2rem;
@@ -217,4 +218,146 @@ h1,h2,h3 {
     color: var(--color-primario);    
     font-size: 1.4rem;
 }
+
+@media (max-width: 1024px) {
+    .card-servicio {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-servicio-texto {
+        width: 100%;
+    }
+    .servicio-icono {
+        margin-bottom: 1rem;
+    }
+}
+
+
 /* </Servicios> */
+
+/* <Estrategia> */
+
+
+.estrategia-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 2rem;
+}
+
+.pregunta-icono-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-lila-claro);   
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-size: 30px;
+}
+
+.pregunta-tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-lila-claro);    
+    width: 90%;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.pregunta-tarjeta span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primario);
+}  
+
+.pregunta-tarjeta h3 {
+    font-size: 1.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+}    
+
+.pregunta-tarjeta p {
+    font-size: 1.2rem;
+    color: var(--color-gris);
+}
+
+@media (max-width: 1024px) {
+    
+    .pregunta {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pregunta-tarjeta {
+        width: 100%;
+    }
+
+    .pregunta-icono-container {
+        display: none;
+    }
+}    
+
+
+/* </Estrategia> */
+
+
+/* CTA */
+
+.cta {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 20rem;        
+}
+
+.bg-cta {
+    background-color: var(--color-primario);
+}
+
+.cta-h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-blanco);    
+    margin-bottom: 1.5rem;
+}
+
+.cta-h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-blanco);    
+    margin-bottom: 3rem;
+}
+
+.btn-cta {
+
+    margin-right: 1rem;
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-cta:hover {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: 1px solid var(--color-blanco);
+}    
+
+/* CTA */
